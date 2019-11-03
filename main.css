@@ -1,0 +1,137 @@
+body {
+	font-family: arial,helvetica,sans-serif;
+}
+#container {
+	margin: 0 auto;
+	width: 100%;
+}
+#header {
+	background-color: gold;
+	padding: 10px;
+	text-align: center;
+}
+#imenu {
+	float: left;
+	width: 100%;
+	background-color: #0c0c0c;
+}
+#imenu ul li {
+	list-style-type: none;
+	display: inline
+}
+#imenu li a {
+	display: block;
+	text-decoration: none;
+	border-right: 2px solid #FFFFFF;
+	padding: 3px 10px;
+	float: left;
+	color: #FFFFFF;
+}
+#imenu li a:hover {
+	background-color: #CCCCCC;
+}
+#mainc {
+	float: left;
+	width: 100%;
+}
+form fieldset {
+	display: inline-block;
+}
+.radioButton {
+	float: none;
+	display: inline;
+	margin-right: 0.1em;
+	width: 2em;
+}
+form label {
+	width: 8em;
+	margin-right: 1em;
+	float: left;
+	text-align: right;
+	display: block;
+}
+form input {
+	width: 15em;
+}
+#submit {
+	margin-top: 2em;
+	float: right;
+}
+.errorClass {
+	background-color: #CC6666; 
+}
+#errorDiv {
+	color: red
+}
+.errorFeedback {
+	visibility: hidden;
+}
+.phoneTypeError {
+	margin-left: 1.2em;
+	padding: 0.1em;
+	background-color: #CCC666;
+}
+#footer {
+	clear: left;
+	background-color: gold;
+	text-align: center;
+	padding: 20px;
+	height: 1px;
+}#content {
+	clear: left;
+	float: left;
+	width: 65%;
+	padding: 20px 0;
+	margin: 0 0 0 5%;
+	display: inline;
+}
+.slide-container {
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+}
+.image-container {
+	width: 900px;
+	height: 300px;
+	position: relative;
+	transition: left 3s;
+	-webkit-transition: left 3s;
+	-moz-transition: left 3s;
+	-o-transition: left 3s;
+}
+.slider-image {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.button-container {
+	top: -20px;
+	position: relative;
+}
+.slider-button {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: white;
+}
+#slider-image-1:target ~ .image-container{
+	left: 0px;
+}
+#slider-image-2:target ~ .image-container{
+	left: -300px;
+}
+#slider-image-3:target ~ .image-container{
+	left: -600px;
+}
+#sidebar {
+	float: right;
+	width: 30%;
+	padding: 20px 0;
+	margin: 0;
+	display: inline;
+	background-color: grey;
+}

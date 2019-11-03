@@ -1,0 +1,51 @@
+<!doctype html>
+<head>
+<title>Rexon-login</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<img src="logo.png"/>
+		<h1>REXON</h1>
+	</div>
+	<div id="imenu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="mainc">
+		<div id="content">
+			<form id="userForm" method="POST" action="Home.html">
+		<div>
+			<fieldset>
+				<legend>User Information</legend>
+				<div id="errorDiv"></div>
+				<label for="email">Email Address:* </label>
+				<input type="text" name="email" id="email">
+				<span class="errorFeedback errorSpan" id="emailError">Email is required</span>
+				<br>
+				<label for="password">Password:* </label>
+				<input type="password" name="password" id="password">
+				<span class="errorFeedback errorSpan" id="passwordError">Password required</span>
+				<br>
+				<input type="submit" name="submit" id="submit">
+			</fieldset>
+		</div>
+	</form>
+		</div>
+		<div id="footer">
+			Copyright (c) 2019 King Kay
+		</div>
+	</div>
+</div>
+</body>
+</html>
